@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-API_KEY = "6dGe1BgS-aeVu1QM5zVT9QfpoNTeBoXNvY1Gfn_QHk1E"
+API_KEY = os.getenv("IBM_API_KEY")
 PROJECT_ID = os.getenv("IBM_PROJECT_ID")
 MODEL_ID = "granite-13b-instruct-v2"
 
